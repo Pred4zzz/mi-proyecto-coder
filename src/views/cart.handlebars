@@ -1,0 +1,14 @@
+<h1>Carrito {{cart._id}}</h1>
+<table class="table">
+  <thead><tr><th>Producto</th><th>Cantidad</th><th>Subtotal</th></tr></thead>
+  <tbody>
+    {{#each cart.products}}
+      <tr>
+        <td>{{this.product.title}}</td>
+        <td>{{this.quantity}}</td>
+        <td>$ {{multiply this.quantity this.product.price}}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+<a href="/products" class="btn btn-link">Volver a productos</a>

@@ -1,0 +1,6 @@
+<h1>Productos (En vivo)</h1>
+<ul id="liveList" class="list-group">
+  {{#each products}}
+    <li class="list-group-item" data-id="{{this._id}}">{{this.title}} - ${{this.price}}</li>
+  {{/each}}
+</ul>

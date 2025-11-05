@@ -52,9 +52,9 @@ const seedDB = async () => {
     await mongoose.connect(process.env.MONGO_URL);
     await Product.deleteMany({});
     await Product.insertMany(products);
-    console.log("✅ Productos insertados correctamente");
+    console.log(" Productos insertados correctamente");
   } catch (error) {
-    console.error("❌ Error al insertar productos:", error);
+    console.error(" Error al insertar productos:", error);
   } finally {
     mongoose.connection.close();
   }

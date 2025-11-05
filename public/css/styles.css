@@ -1,0 +1,15 @@
+.cart-panel {
+  position: fixed;
+  top: 0;
+  right: -380px;
+  width: 380px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -4px 0 16px rgba(0,0,0,.1);
+  z-index: 1050;
+  transition: right .25s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+.cart-panel.open { right: 0; }
+.cart-panel-body { flex: 1; overflow:auto; padding: 1rem; }
